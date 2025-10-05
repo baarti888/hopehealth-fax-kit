@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hope Health Systems – Fax Letter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --ink:#000; --muted:#333; --rule:#000;
+    --font: ui-sans-serif, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  @page { size:8.5in 11in; margin:0.6in; }
+  @media print {
+    body{margin:0;}
+    .page{box-shadow:none;border:0;}
+    a{color:var(--ink);text-decoration:none;}
+  }
+  body{
+    margin:0; background:#fff; color:var(--ink);
+    font-family:var(--font);
+    font-size:9pt; line-height:1.25;
+  }
+  .page{max-width:7.4in;margin:0 auto;padding:0.3in 0;}
+  header{
+    border-bottom:1px solid var(--rule);
+    padding-bottom:4px;margin-bottom:10px;
+    display:flex;align-items:center;gap:10px;
+  }
+  header img{height:60px;width:auto;}
+  .header-text{flex:1;display:flex;flex-direction:column;justify-content:center;}
+  .header-line1{font-size:11pt;line-height:1.2;}
+  .header-line1 strong{font-weight:700;}
+  .header-line2{font-size:9pt;color:var(--muted);line-height:1.2;margin-top:2px;}
+  .date{margin-top:2px;font-size:8pt;color:var(--muted);}
+  h1{font-size:11pt;margin:0 0 8px;line-height:1.2;}
+  h2{font-size:11.5pt;font-weight:800;margin:4px 0 4px;line-height:1.25;}
+  p{margin:5px 0;}
+  ul{margin:3px 0 0 12px;padding:0;}
+  li{margin:2px 0;}
+  .block{border:1px solid var(--rule);padding:8px 10px;margin:8px 0;page-break-inside:avoid;display:flex;justify-content:space-between;align-items:center;gap:10px;}
+  .block-content{flex:1;display:flex;flex-direction:column;justify-content:center;}
+  .qrcol{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;margin-left:10px;}
+  .qrcol img{width:95px;height:95px;display:block;border:1px solid var(--rule);}
+  .qrtext{font-size:8pt;color:var(--muted);text-align:center;margin-top:3px;}
+  .sig{margin-top:6px;}
+  footer{border-top:1px solid var(--rule);margin-top:8px;padding-top:4px;font-size:8.5pt;color:var(--muted);}
+  .lead{font-size:10pt;line-height:1.35;margin:7px 0;}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <img src="assets/logo.jpg" alt="Hope Health logo">
+    <div class="header-text">
+      <div class="header-line1"><strong>Dr. Bart Kaczmarek</strong>, Hope Health Systems</div>
+      <div class="header-line2">
+        1550 Ouellette Avenue, Windsor ON • 📧 info@hopehealth.ca • ☎ (519) 256-1821
+      </div>
+      <div class="date">Date: <span id="today">________________</span></div>
+    </div>
+  </header>
+
+  <h1>Subject: An Invitation to Work Together</h1>
+  <p class="lead">Dear Dr. {{Name}},</p>
+
+  <p class="lead">
+    I wonder if you’ve experienced the same thing at work before: you start the day ready to practise medicine —
+    but the admin, paperwork, and repetitive tasks take over.
+    Between <strong>staff shortages, rising costs, and growing patient demands</strong>,
+    you start wondering how long it will take before you burn out.
+    <strong>It shouldn’t be that way — so I decided to change it.</strong>
+  </p>
+
+  <p class="lead">
+    At our <strong>brand-new, modern turn-key clinic at 1550 Ouellette Avenue</strong>,
+    everything is built to reverse that.
+    It’s a <strong>self-made, complete FHT-style system</strong> — physicians work 100 % clinical,
+    supported by a full admin and nursing team, coordinated through our
+    <strong>proprietary rooming system</strong> that keeps learning,
+    making every visit flow smoothly and predictably.
+    You leave for home on time — accomplished, with higher billings than you imagined.
+  </p>
+
+  <p class="lead">
+    I know you are already running a busy and well-established practice but I thought I would welcome you
+    to come see it in person anyways — maybe a transition like this would suit you, no obligation.
+  </p>
+
+  <p class="lead">
+    We also have a <strong>single affiliated opening at our Tecumseh Road East location</strong> —
+    ideal for physicians with an established practice with an option of a <strong>solid cash bonus</strong> —
+    and a <strong>Transitions program</strong> for doctors looking to retire or sell their practice into good hands.
+  </p>
+
+  <!-- Ouellette block -->
+  <div class="block">
+    <div class="block-content">
+      <h2>A turn-key FHT-style opportunity at <strong>1550 Ouellette</strong></h2>
+      <ul>
+        <li><strong>$1M + billings</strong> achievable within 2 years even when starting from scratch</li>
+        <li>Zero admin, zero paperwork, complete FHT-style support</li>
+        <li>A system that measures and continually improves patient flow</li>
+      </ul>
+    </div>
+    <div class="qrcol">
+      <img alt="QR code to systems.hopehealth.ca" src="https://api.qrserver.com/v1/create-qr-code/?size=95x95&data=https://systems.hopehealth.ca/fax">
+      <div class="qrtext">systems.hopehealth.ca</div>
+    </div>
+  </div>
+
+  <!-- Tecumseh block -->
+  <div class="block">
+    <div class="block-content">
+      <h2>Single opening at <strong>3955 Tecumseh Rd E</strong> in Windsor</h2>
+      <ul><li><strong>$50 000 + sign-up / relocation bonus</strong> for a full-time physician</li></ul>
+    </div>
+    <div class="qrcol">
+      <img alt="QR code to tecumseh.hopehealth.ca" src="https://api.qrserver.com/v1/create-qr-code/?size=95x95&data=https://tecumseh.hopehealth.ca/fax">
+      <div class="qrtext">tecumseh.hopehealth.ca</div>
+    </div>
+  </div>
+
+  <!-- Transitions block -->
+  <div class="block">
+    <div class="block-content">
+      <h2>Retiring? Sell Your Family Practice!</h2>
+      <ul>
+        <li><strong>First Ontario marketplace</strong> for family practices — your work deserves a proper buyout!</li>
+        <li>Ensure your patients are cared for by the next generation</li>
+      </ul>
+    </div>
+    <div class="qrcol">
+      <img alt="QR code to transitions.hopehealth.ca" src="https://api.qrserver.com/v1/create-qr-code/?size=95x95&data=https://transitions.hopehealth.ca/fax">
+      <div class="qrtext">transitions.hopehealth.ca</div>
+    </div>
+  </div>
+
+  <p class="lead">
+    If any of this resonates, I’m happy to speak physician-to-physician. A brief call is often easiest.
+  </p>
+
+  <p class="lead sig">
+    Sincerely,<br>
+    <strong>Dr. Bart Kaczmarek</strong><br>
+    Family Physician & Founder, Hope Health Systems
+  </p>
+
+  <footer>
+    For a quick response: <strong>info@hopehealth.ca</strong> • <strong>(519) 256-1821</strong>
+  </footer>
+</div>
+
+<script>
+(function(){
+  try{
+    var el=document.getElementById('today');
+    if(!el)return;
+    var d=new Date();
+    el.textContent=d.toLocaleDateString(undefined,{year:'numeric',month:'long',day:'numeric'});
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
